@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useState, type SubmitEvent } from "react";
 import { useRouter } from "next/navigation";
 import { useSession } from "@/lib/session";
 
@@ -12,7 +12,7 @@ export default function LoginPage() {
   const [pass, setPass] = useState("");
   const [email, setEmail] = useState("");
 
-  const submit = (e: FormEvent) => {
+  const submit = (e: SubmitEvent) => {
     e.preventDefault();
     login({ name: (user || "PLAYER1").toUpperCase().slice(0, 10) });
     router.push("/");
