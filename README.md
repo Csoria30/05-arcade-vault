@@ -17,7 +17,9 @@ npx skills@latest add Klerith/fernando-skills
 
 ## Commands
 
-- `npm run dev` — start dev server (Turbopack, per `next dev`)
-- `npm run build` — production build
-- `npm run start` — run production build
-- `npm run lint` — ESLint (flat config, `eslint.config.mjs`)
+```bash
+npm run dev      # start dev server (port 3000)
+npm run build    # production build
+npm run start    # serve production build
+npm run lint     # ESLint (Next.js config)
+```
